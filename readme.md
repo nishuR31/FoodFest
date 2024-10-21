@@ -97,13 +97,6 @@ Feel free to contribute to this project by forking the repository and submitting
 ### License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-### Key Points:
-- **Project Title**: `Icfai Asian Combo`.
-- **Description**: A modern, interactive menu system for the Icfai Asian Combo.
-- **How to Run**: Detailed instructions on cloning the repository, installing dependencies, running the project in development mode, and building for production.
-- **Tech Stack**: Lists the technologies used (React, Node.js, CSS).
-- **QR Code**: Mentions the use of `qrcode.react` for QR code generation.
-- **Contributing**: Guidelines for contributing to the project.
 
 
 
