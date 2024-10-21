@@ -7,23 +7,22 @@
 
 body {
   font-family: 'Helvetica Neue', sans-serif;
-  background: #f4f4f9;
-  color: #333;
+  background: #f4f4f900;
+  color: transparent;
 }
 
 /* Menu Item Container */
 .menu-item {
   position: relative;
-  background: linear-gradient(135deg, #f0f0f0 30%, #fff 100%);
   border-radius: 15px;
   padding: 25px;
-  max-width: 400px;
+  max-width: auto;
   margin: 20px auto;
   text-align: center;
   transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
   cursor: pointer;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1), inset 0 -5px 10px rgba(0, 0, 0, 0.05);
-  overflow: hidden;
+  overflow: visible;
 }
 
 .menu-item:hover {
@@ -34,8 +33,9 @@ body {
 
 /* Menu Item Image */
 .menu-item-image {
-  max-width: 100%;
+  width: auto;
   height: auto;
+  max-width: auto;
   border-radius: 10px;
   margin-bottom: 20px;
   transition: transform 0.4s ease, filter 0.4s ease;
@@ -72,14 +72,14 @@ body {
   color: #555;
   margin-bottom: 20px;
   line-height: 1.6;
-  height: 0;
+  max-height: 0;
   opacity: 0;
   overflow: hidden;
-  transition: height 0.6s ease, opacity 0.6s ease, padding 0.6s ease;
+  transition: max-height 0.6s ease, opacity 0.6s ease, padding 0.6s ease;
 }
 
-.menu-item-button.active + .menu-item-description {
-  height: auto;
+.menu-item-description.show {
+  max-height: 500px; /* Adjust accordingly based on typical content length */
   opacity: 1;
   padding-top: 10px;
 }
@@ -87,7 +87,7 @@ body {
 /* Button styles with complex hover states */
 .menu-item-button {
   background-color: #3498db;
-  color: white;
+  color: #fff;
   border: none;
   border-radius: 50px;
   padding: 10px 20px;
@@ -101,7 +101,7 @@ body {
 
 .menu-item-button:hover {
   background-color: #2980b9;
-  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 7px 20px rgba(9, 23, 146, 0.2);
   transform: translateY(-3px);
 }
 
@@ -111,7 +111,7 @@ body {
 }
 
 .menu-item-button.active {
-  background-color: #e74c3c;
+  background-color: #db4737;
 }
 
 /* Button Icon Effect (optional, just add an icon for detail toggle) */
@@ -135,16 +135,16 @@ body {
   }
 
   .menu-item-name {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
 
   .menu-item-description {
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
 
   .menu-item-button {
     padding: 8px 15px;
-    font-size: 0.9rem;
+    font-size: 0.6rem;
   }
 }
 
@@ -154,11 +154,11 @@ body {
   }
 
   .menu-item-name {
-    font-size: 1.4rem;
+    font-size: 1.0rem;
   }
 
   .menu-item-button {
     padding: 6px 12px;
-    font-size: 0.85rem;
+    font-size: 0.6rem;
   }
 }

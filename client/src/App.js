@@ -3,7 +3,7 @@ import "./index.css";
 import combo from "./assets/fullcombo.jpeg"
 import sushi from "./assets/sushicrunch.jpeg"
 import pav from "./assets/pavchai.jpeg"
-
+import MenuItem from "./components/MenuItems";
 
 function App() {
 
@@ -15,18 +15,18 @@ function App() {
 
       <section className="menu-section" style={{ textAlign: "center" }} >
         <MenuItem
-          name="ICFAI Asia Combo"
-          description="A Bite of Asia Served With Icfai Spirit. Here you will get sushi, pav bhaji, tea,golden cruncha all in one plater for special price Rs.60, Rs.10 OFF!!"
+          name={"ICFAI Asia Combo"}
+          description={"A Bite of Asia Served With Icfai Spirit. Here you will get sushi, pav bhaji, tea,golden cruncha all in one plater for special price Rs.60, Rs.10 OFF!!"}
           imageUrl={combo}
         />
         <MenuItem
-          name="Supper for ICFAIAN Menu"
-          description="A bite of Asian ethnicity. Here you will get sushi , golden crunch and the their combo in most affordable prices!!"
+          name={"Supper for ICFAIAN Menu"}
+          description={"A bite of Asian ethnicity. Here you will get sushi , golden crunch and the their combo in most affordable prices!!"}
           imageUrl={sushi}
         />
         <MenuItem
-          name="The Authentic Taste of Maharashtra"
-          description="A Bite of India ethnicity of Maharashtra. Here you will be Served with pav bhaji, tea and their combo in most affordable prices!!"
+          name={"The Authentic Taste of Maharashtra"}
+          description={"A Bite of India ethnicity of Maharashtra. Here you will be Served with pav bhaji, tea and their combo in most affordable prices!!"}
           imageUrl={pav}
         />
       </section>
