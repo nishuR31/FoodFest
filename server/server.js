@@ -3,14 +3,12 @@ const path = require('path');
 const app = express();
 const port = process.env.PORT || 3001;
 
-// Serve the static files from the React app
-// app.use(express.static(path.join(__dirname, 'client/public')));
-app.use(express.static(path.join(__dirname, 'client', 'public')));
+// Serve the static files from the React app build folder
+app.use(express.static(path.join(__dirname, 'client', 'build')));
 
-
-// Fallback for any unknown routes
+// Fallback for any unknown routes (SPA support)
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname + '/client/public/index.html'));
+  res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
 });
 
 // Error handling middleware

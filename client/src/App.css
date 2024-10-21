@@ -19,7 +19,7 @@ body {
 
 .parallax {
   font-family: 'Brush Script MT', cursive;
-  background: url('placeholder.jpg') no-repeat center;
+  background: url('"A:\\app\\FoodFest\\client\\src\\assets\\bg.webp"') no-repeat center;
   background-size: cover;
   height: 400px;
   display: flex;
