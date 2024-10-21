@@ -1,0 +1,66 @@
+/* MenuItem.css */
+
+.menu-item {
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 16px; /* Spacing inside the item */
+    margin: 10px 0; /* Spacing between items */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s; /* Smooth hover effect */
+  }
+  
+  .menu-item:hover {
+    transform: scale(1.02); /* Slightly scale up on hover */
+  }
+  
+  .menu-item h2 {
+    margin: 0; /* Remove default margin */
+    font-size: 1.5em; /* Larger font for item name */
+  }
+  
+  .menu-item p {
+    margin: 8px 0; /* Spacing between paragraphs */
+  }
+  
+  .discount {
+    color: red; /* Highlight discount in red */
+    font-weight: bold; /* Make it bold */
+  }
+  
+  button {
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 10px 15px; /* Padding for button */
+    border-radius: 4px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  button:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Custom focus ring */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .menu-item {
+      padding: 12px; /* Adjust padding for smaller screens */
+    }
+    .menu-item h2 {
+      font-size: 1.2em; /* Slightly smaller font */
+    }
+  }
+  
+  /* Image Styling */
+  .menu-item-image {
+    width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 4px; /* Rounded corners */
+    margin: 10px 0; /* Spacing above and below the image */
+  }
+  

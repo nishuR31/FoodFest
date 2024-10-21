@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './MenuItem.css';
 
-function MenuItem({ name, price, discount, description }) {
+function MenuItem({ name, price, discount, description, imageUrl }) {
   const [showDetails, setShowDetails] = useState(false);
 
   const toggleDetails = () => {
@@ -10,6 +10,7 @@ function MenuItem({ name, price, discount, description }) {
 
   return (
     <div className="menu-item">
+      {imageUrl && <img src={imageUrl} alt={name} className="menu-item-image" />}
       <h2>{name}</h2>
       <p>
         Price: ₹{price}{' '}

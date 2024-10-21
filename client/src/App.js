@@ -1,8 +1,7 @@
 import React from 'react';
 import './index.css';
 
-import MenuItem from './components/MenuItem';
-
+import MenuItem from './components/MenuItem'; 
 import QRCodeGenerator from './components/QRCodeGenerator';
 
 function App() {
@@ -20,22 +19,24 @@ function App() {
           price={25} 
           discount={20} 
           description="Ingredients: Cucumber, Capsicum, Tomato, Carrot, Cabbage, Onion, Bread" 
+          imageUrl="https://example.com/sushi.jpg" // Replace with actual image URL
         />
         <MenuItem 
           name="Crunch Platter" 
           price={20} 
           discount={33} 
           description="Ingredients: Potato, Spices" 
+          imageUrl="https://example.com/crunch.jpg" // Replace with actual image URL
         />
         <MenuItem 
           name="Combo (Sushi + Crunch)" 
           price={50} 
           discount={20} 
           description="Full platter for special ones!" 
+          imageUrl="https://example.com/combo.jpg" // Replace with actual image URL
         />
       </section>
 
-      {/* QR Code Section */}
       <section className="qr-section">
         <h2>Scan to Give Feedback</h2>
         <QRCodeGenerator value={qrValue} />
