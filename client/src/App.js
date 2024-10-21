@@ -1,67 +1,41 @@
 import React from "react";
 import "./index.css";
+import combo from "./assets/fullcombo.jpeg"
+import sushi from "./assets/sushicrunch.jpeg"
+import pav from "./assets/pavchai.jpeg"
 
-import MenuItem from "./components/MenuItems";
-import QRCodeGenerator from "./components/QRCodeGenerator";
-
-import chai from "./assets/kulhadchai.png";
-import pav from "./assets/pawbhaji.jpeg";
-import menu from "./assets/pawbhaji+chai.jpg";
-import combo from "./assets/chaipav.jpeg";
 
 function App() {
-  const qrValue =
-    "https://docs.google.com/forms/d/e/1FAIpQLSfwM4VVY8Zkf0tq12fmgOlV12PKs6fn9dInF-Ik1s5SAmzbOg/viewform?usp=send_form";
 
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="parallax">Icfai Asian Combo</h1>
+        <h1 className="parallax">ICFAI ASIAN COMBO</h1>
       </header>
 
-      <section className="menu-section">
+      <section className="menu-section" style={{ textAlign: "center" }} >
         <MenuItem
-          name="Menu"
-          price={"Free"}
-          discount={100}
-          description="Menu for our stall."
-          imageUrl={menu}
-        />
-        <MenuItem
-          name="Chai"
-          price={10}
-          discount={""}
-          description="Ingredients: Tea leaves, Elaichi, Milk, Sugar"
-          imageUrl={chai}
-        />
-        <MenuItem
-          name="Pav Bhaji"
-          price={25}
-          discount={""}
-          description="Ingredients: Pav, masala bhaji"
-          imageUrl={pav}
-        />
-        <MenuItem
-          name="Combo (Pav-Bhaji + Chai)"
-          price={30}
-          discount={15}
-          description="Full platter for special ones!"
+          name="ICFAI Asia Combo"
+          description="A Bite of Asia Served With Icfai Spirit. Here you will get sushi, pav bhaji, tea,golden cruncha all in one plater for special price Rs.60, Rs.10 OFF!!"
           imageUrl={combo}
+        />
+        <MenuItem
+          name="Supper for ICFAIAN Menu"
+          description="A bite of Asian ethnicity. Here you will get sushi , golden crunch and the their combo in most affordable prices!!"
+          imageUrl={sushi}
+        />
+        <MenuItem
+          name="The Authentic Taste of Maharashtra"
+          description="A Bite of India ethnicity of Maharashtra. Here you will be Served with pav bhaji, tea and their combo in most affordable prices!!"
+          imageUrl={pav}
         />
       </section>
 
-      <section
-        className="qr-section"
-        style={{ textAlign: "center" }}>
-        <br></br>
-        <br></br>
-        <h2>Scan to Give Feedback</h2>
-        <QRCodeGenerator value={qrValue} />
-      </section>
+
 
       <footer>
         <p>Open Hours: 3PM - 6PM</p>
-        <p>Contact: <b>+918346884110</b> | www..com</p>
+        <p>Contact: <b>+918346884110</b> | <a href="https://food-fest.vercel.app/">https://food-fest.vercel.app/</a></p>
       </footer>
     </div>
   );

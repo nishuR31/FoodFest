@@ -1,74 +1,163 @@
-/* MenuItem.css */
+/* Base styles to normalize and reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background: #f4f4f9;
+  color: #333;
+}
+
+/* Menu Item Container */
 .menu-item {
-    border: 1px solid #ccc; /* Light gray border */
-    border-radius: 8px; /* Rounded corners */
-    padding: 16px; /* Spacing inside the item */
-    margin: 10px 0; /* Spacing between items */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    transition: transform 0.2s; /* Smooth hover effect */
-  }
-  
-  .menu-item:hover {
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
-    transform: scale(1.05);    /*Slightlyscaleuponhover*/
+  position: relative;
+  background: linear-gradient(135deg, #f0f0f0 30%, #fff 100%);
+  border-radius: 15px;
+  padding: 25px;
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+  cursor: pointer;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1), inset 0 -5px 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
 }
 
-  
-  .menu-item h2 {
-    margin: 0; /* Remove default margin */
-    font-size: 1.5em; /* Larger font for item name */
-  }
-  
-  .menu-item p {
-    margin: 8px 0; /* Spacing between paragraphs */
-  }
-  
-  .discount {
-    color: red; /* Highlight discount in red */
-    font-weight: bold; /* Make it bold */
-  }
-  
-  button {
-    background-color: #007bff; /* Blue background */
-    color: white; /* White text */
-    border: none; /* Remove border */
-    padding: 10px 15px; /* Padding for button */
-    border-radius: 4px; /* Rounded corners for button */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
-  }
-  
-  button:hover {
-  background-color: #054d99 ;
-
+.menu-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15), inset 0 0 0 rgba(0, 0, 0, 0);
+  background: linear-gradient(135deg, #fff 0%, #f4f4f9 100%);
 }
 
-  
-  
-  button:focus {
-    outline: none; /* Remove default outline */
-    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Custom focus ring */
+/* Menu Item Image */
+.menu-item-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.menu-item:hover .menu-item-image {
+  transform: scale(1.1) rotate(-3deg);
+  filter: brightness(1.1) contrast(1.1);
+}
+
+/* Menu Item Name with text effect */
+.menu-item-name {
+  font-size: 2rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #ff6347, #ffb347);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: letter-spacing 0.3s ease, transform 0.3s ease;
+}
+
+.menu-item:hover .menu-item-name {
+  letter-spacing: 2px;
+  transform: scale(1.1);
+}
+
+/* Description area with smooth slide effect */
+.menu-item-description {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: height 0.6s ease, opacity 0.6s ease, padding 0.6s ease;
+}
+
+.menu-item-button.active + .menu-item-description {
+  height: auto;
+  opacity: 1;
+  padding-top: 10px;
+}
+
+/* Button styles with complex hover states */
+.menu-item-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item-button:hover {
+  background-color: #2980b9;
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+}
+
+.menu-item-button:active {
+  background-color: #2471a3;
+  transform: translateY(2px);
+}
+
+.menu-item-button.active {
+  background-color: #e74c3c;
+}
+
+/* Button Icon Effect (optional, just add an icon for detail toggle) */
+.menu-item-button:before {
+  content: '\25BC';
+  margin-right: 10px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.menu-item-button.active:before {
+  content: '\25B2';
+  transform: rotate(180deg);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .menu-item {
+    max-width: 90%;
+    padding: 20px;
   }
-  
-  /* Responsive Design */
-  @media (max-width: 600px) {
-    .menu-item {
-      padding: 12px; /* Adjust padding for smaller screens */
-    }
-    .menu-item h2 {
-      font-size: 1.2em; /* Slightly smaller font */
-    }
+
+  .menu-item-name {
+    font-size: 1.6rem;
   }
-  
-  /* Image Styling */
-  .menu-item-image {
-    width: 100%; /* Responsive image */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 4px; /* Rounded corners */
-    margin: 10px 0; /* Spacing above and below the image */
+
+  .menu-item-description {
+    font-size: 1rem;
   }
-  
+
+  .menu-item-button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .menu-item {
+    padding: 15px;
+  }
+
+  .menu-item-name {
+    font-size: 1.4rem;
+  }
+
+  .menu-item-button {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+  }
+}
