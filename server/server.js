@@ -4,7 +4,9 @@ const app = express();
 const port = process.env.PORT || 3001;
 
 // Serve the static files from the React app
-app.use(express.static(path.join(__dirname, 'client/public')));
+// app.use(express.static(path.join(__dirname, 'client/public')));
+app.use(express.static(path.join(__dirname, 'client', 'public')));
+
 
 // Fallback for any unknown routes
 app.get('*', (req, res) => {
