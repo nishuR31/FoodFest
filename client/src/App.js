@@ -1,5 +1,5 @@
 import React from 'react';
-import './public/index.css';
+import './client/src/index.css';
 
 import MenuItem from './components/MenuItem.js';
 import QRCodeGenerator from './components/QRCodeGenerator.js';
