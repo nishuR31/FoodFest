@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { QRCode } from 'qrcode.react';
+// import { QRCode } from 'qrcode.react';
+import { QRCodeCanvas } from 'qrcode.react'; // Use this if you want Canvas rendering
+// Or
+// import { QRCodeSVG } from 'qrcode.react'; // Use this if you prefer SVG rendering
+
 
 function QRCodeGenerator({ value }) {
   const [error, setError] = useState(false);
@@ -16,7 +20,7 @@ function QRCodeGenerator({ value }) {
 
   return (
     <div className="qr-code-container">
-      <QRCode value={value} size={200} />
+      <QRCodeCanvas value={value} size={200} />
     </div>
   );
 }

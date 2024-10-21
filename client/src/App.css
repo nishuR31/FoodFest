@@ -19,7 +19,7 @@ body {
 
 .parallax {
   font-family: 'Brush Script MT', cursive;
-  background: url('bg.webp') no-repeat center;
+  background-image: url('./assets/bg.webp') no-repeat center;
   background-size: cover;
   height: 400px;
   display: flex;
