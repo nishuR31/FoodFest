@@ -1,7 +1,8 @@
 import React from 'react';
-import './src/index.css';
+import './index.css';
 
 import MenuItem from './components/MenuItem';
+
 import QRCodeGenerator from './components/QRCodeGenerator';
 
 function App() {
