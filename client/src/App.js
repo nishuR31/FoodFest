@@ -16,7 +16,7 @@ function App() {
       <section className="menu-section">
         <MenuItem 
           name="Menu" 
-          price={"free"} 
+          price={" free"} 
           discount={100} 
           description="Menu" 
           imageUrl="A:\app\FoodFest\client\src\assets\menu.jpeg" // Replace with actual image URL
