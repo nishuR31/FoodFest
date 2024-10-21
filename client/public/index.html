@@ -6,13 +6,92 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Icfai Asian Combo</title>
+
+  <!-- SEO Meta Tags -->
   <meta name="description"
     content="Join us for the Icfai Asian Combo Food Fest! Experience a delightful array of Asian cuisines, interactive menus, live cooking demonstrations, and QR code feedback. Enjoy special discounts and offers while indulging in culinary delights. A feast for the senses awaits you!" />
+  <meta name="keywords" content="Icfai, Asian, Combo, Food Fest, Sushi, Platter, Crunch, QR code, Feedback, Discounts, Cuisine" />
+  <meta name="author" content="Icfai Asian Combo Team" />
+  <meta property="og:title" content="Icfai Asian Combo - Food Fest">
+  <meta property="og:description" content="A delightful array of Asian cuisines with interactive menus and live cooking!">
+  <meta property="og:image" content="A:\app\FoodFest\client\src\assets\menu.jpeg">
+  <meta property="og:url" content="https://www.github.com/nishuR31">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Icfai Asian Combo - Food Fest">
+  <meta name="twitter:description" content="Join us for an exciting food festival featuring Asian cuisines, discounts, and more!">
+  <!-- <meta name="twitter:image" content="https://example.com/twitter-image.jpg"> -->
+
+  <!-- Schema.org structured data -->
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Event",
+      "name": "Icfai Asian Combo Food Fest",
+      "description": "Join us for a delightful array of Asian cuisines with interactive menus, live cooking demonstrations, and QR code feedback!",
+      "startDate": "2024-11-15T15:00",
+      "endDate": "2024-11-15T18:00",
+      "location": {
+        "@type": "Place",
+        "name": "Icfai University Campus",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "123 University Road",
+          "addressLocality": "Ranchi",
+          "postalCode": "835222",
+          "addressCountry": "IN"
+        }
+      },
+      "image": "A:\app\FoodFest\client\src\assets\bg.webp",
+      "offers": {
+        "@type": "Offer",
+        "url": "A:\app\FoodFest\client\src\assets\pawbhaji+chai.jpg",
+        "price": "Dependable",
+        "priceCurrency": "INR",
+        "validFrom": "2024-11-01"
+      },
+      "organizer": {
+        "@type": "Organization",
+        "name": "Icfai University",
+        "url": "https://www.iujharkhand.edu.in/"
+      }
+    }
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" href="A:\app\FoodFest\client\src\assets\food-cart.png" type="image/x-icon">
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="./index.css">
+
+  <!-- Font and Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  
+  <!-- Accessibility Enhancements -->
+  <meta name="theme-color" content="#000000">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- Progressive Web App Manifest -->
+  <link rel="manifest" href="/manifest.json">
+
 </head>
 
 <body>
-  <div id="root"></div>
+  <div id="root" aria-live="polite"></div>
+
+  <!-- Optional: Performance and Accessibility Scripts -->
+  <script>
+    // Lazy load images for better performance
+    document.addEventListener("DOMContentLoaded", function () {
+      const images = document.querySelectorAll('img');
+      images.forEach((image) => {
+        image.setAttribute('loading', 'lazy');
+      });
+    });
+  </script>
 </body>
 
 </html>

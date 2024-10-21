@@ -85,3 +85,35 @@ h1 {
   font-size: 2em;
   font-weight: bold;
 }
+
+.qr-code-container {
+  margin: 20px auto;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.qr-code-container:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+  transition: all 0.3s ease-in-out;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms;
+}
