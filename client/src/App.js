@@ -15,18 +15,25 @@ function App() {
 
       <section className="menu-section">
         <MenuItem 
+          name="Menu" 
+          price={"free"} 
+          discount={100} 
+          description="Menu" 
+          imageUrl="A:\app\FoodFest\client\src\assets\menu.jpeg" // Replace with actual image URL
+        />
+        <MenuItem 
           name="Sushi Platter" 
           price={25} 
           discount={20} 
           description="Ingredients: Cucumber, Capsicum, Tomato, Carrot, Cabbage, Onion, Bread" 
-          imageUrl="https://example.com/sushi.jpg" // Replace with actual image URL
+          imageUrl="A:\app\FoodFest\client\src\assets\vegsushi.jpg" // Replace with actual image URL
         />
         <MenuItem 
           name="Crunch Platter" 
           price={20} 
           discount={33} 
           description="Ingredients: Potato, Spices" 
-          imageUrl="https://example.com/crunch.jpg" // Replace with actual image URL
+          imageUrl="A:\app\FoodFest\client\src\assets\goldencrunch.png" // Replace with actual image URL
         />
         <MenuItem 
           name="Combo (Sushi + Crunch)" 
