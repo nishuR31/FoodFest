@@ -192,3 +192,29 @@ footer a:hover {
     font-size: 1.1rem;
   }
 }
+
+
+/* Footer Styling */
+footer {
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+  font-size: 1rem;
+  color: #555;
+  margin-top: 50px;
+  border-top: 1px solid #ccc; /* Optional: Add a border for distinction */
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
