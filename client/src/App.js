@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.css'; // Import the CSS styles
-import MenuItem from './components/MenuItem';  // Import MenuItem component
+import MenuItem from './components/MenuItems';  // Import MenuItem component
 import QRCodeGenerator from './components/QRCodeGenerator';  // Import QR Code Generator
 import { Button } from '@mui/material'; // Material UI Button
 
