@@ -4,11 +4,13 @@
   "description": "Icfai Asian Combo web app built using React and Node.js with CSS and parallax effects.",
   "main": "public/index.html",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
+  "start": "cd client && react-scripts start",
+  "build": "cd client && react-scripts build",
+  "test": "cd client && react-scripts test",
+  "eject": "cd client && react-scripts eject"
+}
+
+  ,
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
