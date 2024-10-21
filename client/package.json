@@ -2,7 +2,7 @@
   "name": "icfai-asian-combo",
   "version": "1.0.0",
   "description": "Icfai Asian Combo web app built using React and Node.js with CSS and parallax effects.",
-  "main": "src/index.js",
+  "main": "public/index.html",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
