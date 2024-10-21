@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './MenuItems.css';
 
-function MenuItem({ name, price, discount, description, imageUrl }) {
+function MenuItem({ name, description, imageUrl }) {
   const [showDetails, setShowDetails] = useState(false);
 
   const toggleDetails = () => {
