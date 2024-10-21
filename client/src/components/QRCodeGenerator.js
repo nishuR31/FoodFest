@@ -1,15 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { QRCodeCanvas } from 'qrcode.react';
-import { toPng } from 'html-to-image';
+// import { toPng } from 'html-to-image';
 
-function downloadQRCode(ref) {
-  toPng(ref.current).then((dataUrl) => {
-    const link = document.createElement('a');
-    link.href = dataUrl;
-    link.download = 'qr-code.png';
-    link.click();
-  });
-}
+
 
 function QRCodeGenerator({ value }) {
   const [error, setError] = useState(false);
@@ -28,8 +21,7 @@ function QRCodeGenerator({ value }) {
   return (
     <div className="qr-code-container" ref={qrRef}>
       <QRCodeCanvas value={value} size={200} />
-      <button onClick={() => downloadQRCode(qrRef)}>Download QR Code</button>
-    </div>
+     </div>
   );
 }
 

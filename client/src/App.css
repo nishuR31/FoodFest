@@ -30,16 +30,18 @@ body {
 /* Parallax effect for the banner */
 .parallax {
   font-family: 'Brush Script MT', cursive;
-  background-image: url('./bg.webp');
+  background-image:;
+  url('A:\app\FoodFest\client\src\assets\vegsushi.jpg');
   background-size: cover;
-  background-attachment: fixed; /* Parallax effect */
-  height: 400px;
+  background-attachment: fixed;
+  /*Parallaxeffect*/height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   font-size: 4rem;
   animation: parallaxScroll 10s infinite linear;
+  -webkit-animation: parallaxScroll 10s infinite linear;
 }
 
 @keyframes parallaxScroll {
@@ -142,6 +144,7 @@ button:active {
   margin: 0 auto;
   width: 200px;
   height: 200px;
+  -webkit-animation: pulse 2s infinite ease-in-out;
   animation: pulse 2s infinite ease-in-out;
 }
 

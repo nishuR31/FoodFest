@@ -1,11 +1,17 @@
-import React from 'react';
-import './index.css'; // Import the CSS styles
-import MenuItem from './components/MenuItems';  // Import MenuItem component
-import QRCodeGenerator from './components/QRCodeGenerator';  // Import QR Code Generator
-import { Button } from '@mui/material'; // Material UI Button
+import React from "react";
+import "./index.css";
+
+import MenuItem from "./components/MenuItems";
+import QRCodeGenerator from "./components/QRCodeGenerator";
+
+import chai from "./assets/kulhadchai.png";
+import pav from "./assets/pawbhaji.jpeg";
+import menu from "./assets/pawbhaji+chai.jpg";
+import combo from "./assets/chaipav.jpeg";
 
 function App() {
-  const qrValue = "https://docs.google.com/forms/d/e/1FAIpQLSfwM4VVY8Zkf0tq12fmgOlV12PKs6fn9dInF-Ik1s5SAmzbOg/viewform?usp=send_form";
+  const qrValue =
+    "https://docs.google.com/forms/d/e/1FAIpQLSfwM4VVY8Zkf0tq12fmgOlV12PKs6fn9dInF-Ik1s5SAmzbOg/viewform?usp=send_form";
 
   return (
     <div className="App">
@@ -14,45 +20,48 @@ function App() {
       </header>
 
       <section className="menu-section">
-        <MenuItem 
-          name="Menu" 
-          price="Free" 
-          discount={100} 
-          description="Our Asian combo menu" 
-          imageUrl="A:/app/FoodFest/client/src/assets/menu.jpeg" 
+        <MenuItem
+          name="Menu"
+          price={"Free"}
+          discount={100}
+          description="Menu for our stall."
+          imageUrl={menu}
         />
-        <MenuItem 
-          name="Sushi Platter" 
-          price={25} 
-          discount={20} 
-          description="Ingredients: Cucumber, Capsicum, Tomato, Carrot, Cabbage, Onion, Bread" 
-          imageUrl="A:/app/FoodFest/client/src/assets/vegsushi.jpg"
+        <MenuItem
+          name="Chai"
+          price={10}
+          discount={""}
+          description="Ingredients: Tea leaves, Elaichi, Milk, Sugar"
+          imageUrl={chai}
         />
-        <MenuItem 
-          name="Crunch Platter" 
-          price={20} 
-          discount={33} 
-          description="Ingredients: Potato, Spices" 
-          imageUrl="A:/app/FoodFest/client/src/assets/goldencrunch.png"
+        <MenuItem
+          name="Pav Bhaji"
+          price={25}
+          discount={""}
+          description="Ingredients: Pav, masala bhaji"
+          imageUrl={pav}
         />
-        <MenuItem 
-          name="Combo (Sushi + Crunch)" 
-          price={50} 
-          discount={20} 
-          description="Full platter for special ones!" 
-          imageUrl="https://example.com/combo.jpg"
+        <MenuItem
+          name="Combo (Pav-Bhaji + Chai)"
+          price={30}
+          discount={15}
+          description="Full platter for special ones!"
+          imageUrl={combo}
         />
       </section>
 
-      <section className="qr-section">
+      <section
+        className="qr-section"
+        style={{ textAlign: "center" }}>
+        <br></br>
+        <br></br>
         <h2>Scan to Give Feedback</h2>
         <QRCodeGenerator value={qrValue} />
-        <Button variant="contained" color="primary">Order Now</Button>
       </section>
 
       <footer>
         <p>Open Hours: 3PM - 6PM</p>
-        <p>Contact: +918346884110 | www.foodfest.com</p>
+        <p>Contact: <b>+918346884110</b> | www..com</p>
       </footer>
     </div>
   );

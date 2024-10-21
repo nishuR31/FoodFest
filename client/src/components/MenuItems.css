@@ -10,8 +10,13 @@
   }
   
   .menu-item:hover {
-    transform: scale(1.02); /* Slightly scale up on hover */
-  }
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);    /*Slightlyscaleuponhover*/
+}
+
   
   .menu-item h2 {
     margin: 0; /* Remove default margin */
@@ -38,8 +43,11 @@
   }
   
   button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-  }
+  background-color: #054d99 ;
+
+}
+
+  
   
   button:focus {
     outline: none; /* Remove default outline */
