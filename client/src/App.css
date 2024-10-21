@@ -16,7 +16,7 @@ body {
 
 /* App Header with Parallax Effect */
 .App-header {
-  height: 60vh;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -134,29 +134,7 @@ body {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Footer Styling */
-footer {
-  background-color: #f4f4f4;
-  padding: 20px;
-  text-align: center;
-  font-size: 1rem;
-  color: #555;
-  margin-top: 50px;
-}
 
-footer p {
-  margin-bottom: 10px;
-}
-
-footer a {
-  color: #3498db;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
 
 /* Responsive Media Queries */
 @media (min-width: 768px) {
