@@ -30,12 +30,9 @@ function App() {
           imageUrl={pav}
         />
       </section>
-
-
-
       <footer>
         <p>Open Hours: 3PM - 6PM</p>
-        <p>Contact: <b>+918346884110</b> | <a href="https://food-fest.vercel.app/">https://food-fest.vercel.app/</a></p>
+        <p>Contact: <b>+918346884110</b> | <a href="#">https://food-fest.vercel.app/</a></p>
       </footer>
     </div>
   );

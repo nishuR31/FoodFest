@@ -43,7 +43,8 @@ body {
 
 .menu-item:hover .menu-item-image {
   transform: scale(1.1) rotate(-3deg);
-  filter: brightness(1.1) contrast(1.1);
+
+  filter: contrast(1.1);
 }
 
 /* Menu Item Name with text effect */
@@ -54,7 +55,7 @@ body {
   margin-bottom: 10px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  background: linear-gradient(90deg, #ff6347, #ffb347);
+  background: linear-gradient(90deg, #ff2600, #1900ff);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -86,7 +87,7 @@ body {
 
 /* Button styles with complex hover states */
 .menu-item-button {
-  background-color: #3498db;
+  background-color: #0099ff;
   color: #fff;
   border: none;
   border-radius: 50px;
@@ -100,13 +101,13 @@ body {
 }
 
 .menu-item-button:hover {
-  background-color: #2980b9;
-  box-shadow: 0 7px 20px rgba(9, 23, 146, 0.2);
+  background-color: #2600ff;
+  box-shadow: 0 7px 20px rgba(23, 44, 236, 0.2);
   transform: translateY(-3px);
 }
 
 .menu-item-button:active {
-  background-color: #2471a3;
+  background-color: #0fc7f5;
   transform: translateY(2px);
 }
 

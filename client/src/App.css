@@ -1,5 +1,6 @@
 /* General Reset */
 * {
+  height: 100vh;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -79,7 +80,8 @@ body {
   overflow: hidden;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  max-width: auto;
+  width: auto;
+  height: auto;
   margin: 0 auto;
   text-align: left;
   padding: 20px;
@@ -94,7 +96,7 @@ body {
 
 /* Menu Item Image */
 .menu-item img {
-  width: 100%;
+  width: auto;
   height: auto; /* Use auto to maintain aspect ratio */
   max-height: 200px; /* Set a max height if needed */
   object-fit: cover; /* Cover keeps the aspect ratio, filling the space */
