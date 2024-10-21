@@ -37,13 +37,13 @@ function App() {
       </section>
       <footer>
         <p>
-          Contact: <b>+918346884110</b> |{" "}
+          <i>Contact: <b>+918346884110</b> |{" "}</i>
           <a
             href="https://food-fest.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            https://food-fest.vercel.app/
+            food-fest.vercel.app
           </a>
         </p>
       </footer>
