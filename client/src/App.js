@@ -1,8 +1,8 @@
 import React from 'react';
-import '../public/index.css';
+import './public/index.css';
 
-import MenuItem from '../components/MenuItem.js';
-import QRCodeGenerator from '../components/QRCodeGenerator.js';
+import MenuItem from './components/MenuItem.js';
+import QRCodeGenerator from './components/QRCodeGenerator.js';
 
 function App() {
   const qrValue = "https://docs.google.com/forms/d/e/1FAIpQLSfwM4VVY8Zkf0tq12fmgOlV12PKs6fn9dInF-Ik1s5SAmzbOg/viewform?usp=send_form";
