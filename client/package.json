@@ -1,0 +1,41 @@
+{
+  "name": "icfai-asian-combo",
+  "version": "1.0.0",
+  "description": "Icfai Asian Combo web app built using React and Node.js with CSS and parallax effects.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "5.0.1",
+    "qrcode.react": "^4.0.1"
+  },
+  "devDependencies": {},
+  "author": "Your Name",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "icfai",
+    "combo-menu",
+    "restaurant",
+    "qr-code",
+    "parallax"
+  ],
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

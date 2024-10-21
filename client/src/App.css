@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  height: 150px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+.parallax {
+  font-family: 'Brush Script MT', cursive;
+  background: url('placeholder.jpg') no-repeat center;
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 4rem;
+  animation: parallaxScroll 10s infinite linear;
+}
+
+@keyframes parallaxScroll {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -100%;
+  }
+}
+
+.menu-section {
+  padding: 50px;
+  background: #f4f4f9;
+}
+
+.menu-item {
+  border: 2px solid #ccc;
+  padding: 20px;
+  margin: 10px 0;
+  background: #fff;
+  transition: transform 0.2s ease-in-out;
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+}
+
+.discount {
+  color: red;
+  font-weight: bold;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.qr-section {
+  margin: 30px 0;
+}
+
+.qr-code-container {
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+}
+
+footer {
+  background: #333;
+  color: white;
+  padding: 20px;
+  font-size: 0.9rem;
+}
