@@ -1,5 +1,5 @@
 import React from "react";
-import "./index.css";
+import "./App.css";
 import combo from "./assets/fullcombo.jpeg";
 import sushi from "./assets/sushicrunch.jpeg";
 import pav from "./assets/pavchai.jpeg";
