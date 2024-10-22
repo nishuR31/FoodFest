@@ -18,8 +18,8 @@ body {
   /* Sets line height for readable text */
   overflow-x: hidden;
 }
- 
-  /* Prevents horizontal scrolling */
+
+/* Prevents horizontal scrolling */
 
 /* App Header with Parallax Effect */
 .App-header {
@@ -51,24 +51,63 @@ body {
   z-index: 0;
 }
 
+
+
+.parallaxp {
+  font-size: 2rem;
+  background-color: transparent;
+  /*Mainheadingfontsize(modifiable)*/
+  letter-spacing: 5px;
+  /*Addsspacebetweenletters(modifiable)*/
+  z-index: 2;
+  text-align: center;
+  /*Ensuresthistextappearsabovethebackground*/
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  /*Headingtextcolor(modifiable)*/
+  text-transform: uppercase;
+  /*Convertstexttouppercase*/
+  /*Addsashadoweffecttothetext(modifiable)*/
+  animation: slideDown 1.5s ease-out forwards;
+  animation: glow 5s ease-out infinite forwards;
+
+}
+
 .parallax {
   font-size: 3rem;
   background-color: transparent;
-  /* Main heading font size (modifiable) */
-  letter-spacing: 5px;
-  /* Adds space between letters (modifiable) */
-  z-index: 2;
-  /* Ensures this text appears above the background */
-  color: #ffffff;
-  /* Heading text color (modifiable) */
-  text-transform: uppercase;
-  /* Converts text to uppercase */
-
-  text-shadow: 2px 4px 2px  rgba(255, 255, 255, 0.356),2px 4px 4px  rgba(255, 255, 255, 0.363),2px 4px 6px  rgba(255, 255, 255, 0.253),2px 4px 10px  rgba(255, 255, 255, 0.096) ;
-  /* Adds a shadow effect to the text (modifiable) */
-  animation: slideDown 1.5s ease-out forwards;
-  /* Animation for the heading sliding down */
+  /*Mainheadingfontsize(modifiable)*/letter-spacing: 5px;
+  /*Addsspacebetweenletters(modifiable)*/z-index: 2;
+  /*Ensuresthistextappearsabovethebackground*/color: #ffffff;
+  /*Headingtextcolor(modifiable)*/text-transform: uppercase;
+  /*Convertstexttouppercase*/text-shadow: 1px 2px 2px rgba(255, 255, 255, 0.356), 2px 4px 3px rgba(255, 255, 255, 0.363), 3px 6px 4px rgba(255, 255, 255, 0.253), 4px 8px 5px rgba(255, 255, 255, 0.096);
+  /*Addsashadoweffecttothetext(modifiable)*/animation: slideDown 4s ease-in-out forwards;
+  /* -webkit-animation: slideDown 5s ease-out linear forwards; */
 }
+
+@keyframes glow {
+  0% {
+    text-shadow: 0px 0px 0px rgba(255, 255, 255, 0), 1px 1px 2px rgba(255, 255, 255, 0);
+  }
+
+  25% {
+    text-shadow: 0px 0px 0px rgba(255, 255, 255, 0.5), 1px 1px 2px rgba(255, 255, 255, 0.5);
+  }
+
+  50% {
+    text-shadow: 0px 0px 0px rgb(255, 255, 255), 1px 1px 2px rgb(255, 255, 255);
+  }
+
+  75% {
+    text-shadow: 0px 0px 0px rgba(255, 255, 255, 0.5), 1px 1px 2px rgba(255, 255, 255, 0.5);
+  }
+
+  100% {
+    text-shadow: 0px 0px 0px rgba(255, 255, 255, 0), 1px 1px 2px rgba(255, 255, 255, 0);
+  }
+}
+
 
 @keyframes slideDown {
   0% {
@@ -134,7 +173,7 @@ body {
 .menu-item:hover {
   transform: translateY(-10px);
   /* Menu item moves up slightly on hover */
-
+  box-shadow: none;
   /* Stronger shadow effect on hover */
 }
 
@@ -157,7 +196,7 @@ body {
 .menu-item h2 {
   font-size: 1.5rem;
   /* Heading font size for menu item */
-  color: #2c3e50;
+  color: #2674c2;
   /* Text color for menu item title (modifiable) */
   margin-bottom: 10px;
 }
@@ -165,7 +204,7 @@ body {
 .menu-item p {
   font-size: 1rem;
   /* Font size for the description */
-  color: #34495e;
+  color: black;
   /* Text color for the description (modifiable) */
   line-height: 1.5;
   /* Improves readability */
@@ -174,7 +213,7 @@ body {
 .menu-item button {
   background-color: #3498db;
   /* Button background color (modifiable) */
-  color: #ffffff;
+  color: #ffffffa8;
   /* Button text color (modifiable) */
   border: none;
   padding: 10px 20px;

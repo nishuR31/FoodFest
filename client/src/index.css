@@ -3,9 +3,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
-  background-image: url('./assets/sushicrunch.jpeg');
+  /* background-image: url('./assets/sushicrunch.jpeg'); */
   background-color: transparent;
-  color: #333;
+  color: #3333336e;
 }
 
 #root {
@@ -56,11 +56,11 @@ h1 {
 
 .menu-item:hover {
   transform: scale(1.05);
-  box-shadow: transparent;
+  box-shadow:none;
 }
 
 .menu-item h2 {
-  color: #252525;
+  color: #0f0f0f;
   font-size: 1.5em;
   margin-bottom: 10px;
 }
@@ -98,7 +98,7 @@ h1 {
 }
 
 .menu-item button:hover {
-  background-color: #0a456d3d;
+  background-color: #0a456d18;
   transform: scale(1.1);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
