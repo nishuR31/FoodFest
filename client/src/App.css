@@ -8,7 +8,7 @@
 /* Body Styling */
 body {
   font-family: 'Poppins', sans-serif;
-  background: #f5f5f5;
+  background: #00000000;
   color: #333;
   line-height: 1.6;
 }
@@ -173,12 +173,12 @@ body {
 
 /* Footer Styling */
 footer {
-  background-color: #f4f4f4;
+  background-color: #f4f4f400;
   padding: 20px;
   text-align: center;
   font-size: 1rem;
-  color: #555;
-  z-index:1;
+  color: #ff0000;
+  z-index: 3;
   overflow: visible;
   margin-top: 50px;
   border-top: 1px solid #ccc; /* Optional: Add a border for distinction */
@@ -189,11 +189,12 @@ footer p {
 }
 
 footer a {
-  color: #3498db;
-  text-decoration: none;
+  color: #ffffff; /* Change to match footer text color */
+  text-decoration: none; /* Remove underline */
   font-weight: bold;
 }
 
 footer a:hover {
-  text-decoration: underline;
+  text-decoration: none; /* Keep no underline on hover */
+  font-size: large;
 }

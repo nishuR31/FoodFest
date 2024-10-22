@@ -3,7 +3,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
-  background-color: #f5f5f5;
+  background-image: url('D:\\FoodFest\\client\\src\\assets\\sushicrunch.jpeg');
+  background-color: transparent;
   color: #333;
 }
 
@@ -100,7 +101,7 @@ h1 {
 
 /* Button Styling */
 .menu-item button {
-  background-color: #3498db;
+  background-color: #3498dbb4;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -110,28 +111,11 @@ h1 {
 }
 
 .menu-item button:hover {
-  background-color: #2980b9;
+  background-color: #0a456d00;
   transform: scale(1.1);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* QR Code Container */
-.qr-code-container {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-  background-color: white;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-}
-
-.qr-code-container:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-}
 
 /* Parallax Section */
 .parallax-section {
