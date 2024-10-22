@@ -22,14 +22,14 @@ body {
   text-align: center;
   transition: transform 0.4s ease, box-shadow 0.4s ease, background-image 0.4s ease;
   cursor: pointer;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1), inset 0 -5px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5), inset 0 -5px 10px rgba(0, 0, 0, 0.05);
   overflow: visible;
 }
 
 .menu-item:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(160, 153, 153, 0), inset 0 0 0 rgba(143, 136, 136, 0);
-  background: linear-gradient(135deg, #02020200 0%, #ffffffb7 100%);
+  /* box-shadow: 0 15px 30px rgba(160, 153, 153, 0), inset 0 0 0 rgba(143, 136, 136, 0); */
+  background: linear-gradient(135deg, #02020218 0%, #ffffffb7 100%);
 }
 
 /* Menu Item Image */
@@ -56,10 +56,12 @@ body {
   margin-bottom: 10px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  background: linear-gradient(90deg, #ff0000, #000000, #ff0000);
+  background: transparent;
   -webkit-background-clip: text;
   background-clip: text;
+  -webkit-text-stroke-color: #000000;
   -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
   transition: letter-spacing 0.3s ease, transform 0.3s ease;
 }
 

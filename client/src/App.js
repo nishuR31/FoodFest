@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="parallax">ICFAI RUSSIAN COMBO</h1>
+        <h1 className="parallax">ICFAI ASIAN COMBO</h1>
       </header>
 
       <section className="menu-section" style={{ textAlign: "center" }}>
@@ -41,7 +41,7 @@ function App() {
           <p>
             <strong>Contact Us:</strong>
           </p>
-          <p>Email: <a href="mailto:dreamgf691@gmail.com">dreamgf691@gmail.com</a>|<a href="mailto:khanfardeen9987@gmail.com">khanfardeen9987@gmail.com</a></p>
+          <p>Email: <a href="mailto:nishanrajak01@gmail.com">nishanrajak01@gmail.com</a>|<a href="mailto:khanfardeen9987@gmail.com">khanfardeen9987@gmail.com</a></p>
           <p>Phone: <a href="tel:+1918346884110">+91 8346884110</a></p>
         </div>
       </footer>
