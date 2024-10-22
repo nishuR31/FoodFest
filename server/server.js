@@ -1,39 +1,64 @@
 const express = require('express');
 const path = require('path');
-const helmet = require('helmet'); // Security
-const compression = require('compression'); // Gzip compression
-const cors = require('cors'); // Cross-Origin Resource Sharing
-const morgan = require('morgan'); // HTTP request logging
-const rateLimit = require('express-rate-limit'); // Rate limiting
+const helmet = require('helmet');
+const compression = require('compression');
+const cors = require('cors');
+const morgan = require('morgan');
+const rateLimit = require('express-rate-limit');
+const bodyParser = require('body-parser');
+const apiRoutes = require('./routes/api'); // Ensure the correct path to api.js
 
 const app = express();
 
-// Set the port manually
-const port = process.env.PORT || 3001; // Fallback to 3001 if PORT is not set
+// Set up MySQL connection pool
+const mysql = require('mysql2');
+const pool = mysql.createPool({
+  host: 'localhost',
+  user: 'root',
+  password: '0000',
+  database: 'food',
+});
 
-// Apply security headers
-app.use(helmet());
+// Test database connection
+pool.getConnection((err, connection) => {
+  if (err) {
+    console.error('Error connecting to the database:', err);
+  } else {
+    console.log('Connected to the database.');
+    connection.release(); // Release the connection
+  }
+});
 
-// Enable gzip compression
-app.use(compression());
+// Add a middleware to log requests
+app.use((req, res, next) => {
+  console.log(`${req.method} ${req.url}`); // Log the request method and URL
+  next(); // Call the next middleware
+});
 
-// Allow CORS (configure as needed)
-app.use(cors());
+// Middleware
+app.use(express.json()); // Parses JSON request bodies
+// app.use(bodyParser.json()); // You can remove this if using express.json()
 
-// Enable request logging in 'dev' format
-app.use(morgan('dev'));
+// Security and performance middleware
+app.use(helmet()); // Helps secure your app by setting various HTTP headers
+app.use(compression()); // Compresses response bodies
+app.use(cors()); // Enables Cross-Origin Resource Sharing
+app.use(morgan('dev')); // Logs HTTP requests to the console
 
-// Rate limiter to prevent DDoS or brute-force attacks
+// Rate limiting
 const limiter = rateLimit({
-  // windowMs: 15 * 60 * 1000, // 15 minutes
+  windowMs: 1 * 60 * 1000, // 1 minute
   max: 100, // Limit each IP to 100 requests per windowMs
 });
 app.use(limiter);
 
-// Serve the static files from the React app build folder
+// API routes
+app.use('/api', apiRoutes);
+
+// Serve static files from the React app (if you're using React)
 app.use(express.static(path.join(__dirname, 'client', 'build')));
 
-// Fallback for any unknown routes (SPA support)
+// Catch-all handler to serve React's index.html file for any unmatched routes
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
 });
@@ -41,24 +66,22 @@ app.get('*', (req, res) => {
 // Error handling middleware
 app.use((err, req, res, next) => {
   console.error(err.stack);
-
-  // Differentiate between development and production error handling
-  if (app.get('env') === 'development') {
-    res.status(err.status || 500).json({
-      message: err.message,
-      error: err, // Full error in dev mode
-    });
-  } else {
-    res.status(err.status || 500).send('Internal Server Error');
-  }
+  res.status(err.status || 500).json({
+    message: err.message,
+    error: app.get('env') === 'development' ? err : {},
+  });
 });
 
-// Handle 404 errors (route not found)
+// 404 error handler
 app.use((req, res) => {
   res.status(404).send('404: Page Not Found');
 });
 
 // Start the server
+const port = process.env.PORT || 3000; // Set the port
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
+
+// Export pool for use in your API routes
+module.exports = pool; // Export the pool so that it can be used in the API routes

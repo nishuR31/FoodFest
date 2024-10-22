@@ -9,7 +9,7 @@ body {
   font-family: 'Helvetica Neue', sans-serif;
   background-image: url('https://www.foodlocale.in/wp-content/uploads/2022/11/food.jpg');
   background-color: transperent;
-  color: transparent;
+  color: rgba(245, 222, 179, 0.692);
 }
 
 /* Menu Item Container */
