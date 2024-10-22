@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="parallax">ICFAI ASIAN COMBO</h1>
+        <h1 className="parallax">ICFAI RUSSIAN COMBO</h1>
       </header>
 
       <section className="menu-section" style={{ textAlign: "center" }}>

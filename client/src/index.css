@@ -43,7 +43,7 @@ h1 {
 
 /* Individual Menu Item */
 .menu-item {
-  background: white;
+  background: rgba(255, 255, 255, 0.26);
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -60,7 +60,7 @@ h1 {
 }
 
 .menu-item h2 {
-  color: #444;
+  color: #252525;
   font-size: 1.5em;
   margin-bottom: 10px;
 }
@@ -69,20 +69,7 @@ h1 {
   color: #777;
   font-size: 1.1em;
   margin-bottom: 15px;
-}
 
-/* Price and Discount Styling */
-.menu-item .price {
-  font-weight: bold;
-  color: #e63946;
-  font-size: 1.2em;
-}
-
-.menu-item .discount {
-  color: #ffcc00;
-  margin-left: 10px;
-  font-size: 1em;
-  font-weight: bold;
 }
 
 /* Menu Item Image */
@@ -101,7 +88,7 @@ h1 {
 
 /* Button Styling */
 .menu-item button {
-  background-color: #3498dbb4;
+  background-color: #048be6a9;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -111,7 +98,7 @@ h1 {
 }
 
 .menu-item button:hover {
-  background-color: #0a456d00;
+  background-color: #0a456d18;
   transform: scale(1.1);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }

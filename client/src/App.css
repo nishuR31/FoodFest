@@ -9,7 +9,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   background: #00000000;
-  color: #333;
+  color: #21ffe1;
   line-height: 1.6;
 }
 
@@ -19,7 +19,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: rgb(255, 0, 0);
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -39,6 +39,7 @@ body {
   font-size: 3rem;
   letter-spacing: 5px;
   z-index: 1;
+  color: #21ffe1;
   text-transform: uppercase;
   text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
   animation: slideDown 1.5s ease-out forwards;
@@ -61,7 +62,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  background: #fff;
+  background: #00000000;
 }
 
 @media (min-width: 768px) {
@@ -74,7 +75,7 @@ body {
 
 /* MenuItem Container Styling */
 .menu-item {
-  background-color: #fafafa;
+  background-color: #fafafa00;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
@@ -105,19 +106,19 @@ body {
 
 .menu-item h2 {
   font-size: 1.5rem;
-  color: #333;
+  color: #000000;
   margin-bottom: 10px;
 }
 
 .menu-item p {
   font-size: 1rem;
-  color: #555;
+  color: #000000;
   line-height: 1.5;
 }
 
 .menu-item button {
   background-color: #3498db;
-  color: white;
+  color: rgb(255, 255, 255);
   border: none;
   padding: 10px 20px;
   border-radius: 50px;
@@ -173,7 +174,7 @@ body {
 
 /* Footer Styling */
 footer {
-  background-color: #f4f4f400;
+  background-color: #f4f4f460;
   padding: 20px;
   text-align: center;
   font-size: 1rem;
