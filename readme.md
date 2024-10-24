@@ -72,24 +72,25 @@ The project uses qrcode.react for generating QR codes dynamically based on the v
 │   ├── /src
 │   │   ├── /components
 │   │   │   ├── MenuItem.js
-│   │   │   └── QRCodeGenerator.js
+│   │   │   └── MenuItem.css
 │   │   ├── App.js
 │   │   ├── App.css
 │   │   ├── index.js
+│   │   ├── index.css
 │   │   └── /assets (For images and static files)
 │   └── package.json
 │
 ├── /server (Node.js Backend)
-│   ├── server.js
-│   └── /routes
-│       └── api.js (Optional API for menu items, if needed)
+│   └── server.js
+│   
+├── package-lock.json
+├── .gitignore
 ├── package.json
 └── README.md
 ```
 <br>
 
-## MENU
-<img src=
+
 
 # Contributing
 Feel free to contribute to this project by forking the repository and submitting pull requests. Ensure that any significant changes are discussed first through an issue or message.
