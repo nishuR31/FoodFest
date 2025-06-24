@@ -5,10 +5,13 @@
   box-sizing: border-box;
 }
 
+
 body {
   font-family: 'Helvetica Neue', sans-serif;
-  background-image: url('https://www.foodlocale.in/wp-content/uploads/2022/11/food.jpg');
-  background-color: transperent;
+  background-image: url('../assets/bg.webp');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
   color: transparent;
 }
 
